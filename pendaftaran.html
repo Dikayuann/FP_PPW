@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Sekolah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!---Custom CSS -->
+   <link href="styles.css" rel="stylesheet">
+  
+  <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #7d067b;
+        }
+    
+        .container {
+            background-color: #c69be2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        .btn-back {
+            margin-bottom: 20px;
+        }
+        .navbar.navbar-light.bg-white {
+              background-color: #ffffff !important;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+        .navbar-nav .nav-item .nav-link:hover {
+              color: #d3d33e !important; /* Change text color to yellow on hover */
+          }
+    </style>
+    
+</head>
+
+<body>
+
+    
+<section>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
+        <div class="container-fluid">
+                    <a class="navbar-brand " href="#">
+                        <img src="assets/logo.png"
+                        width="200"
+                        height="auto">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pendaftaran.html">Pendaftaran</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pendaftaran.html">Artikel</a>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Berprestasi</a></li>
+                          <li><a class="dropdown-item" href="#">Akreditasi</a></li>
+                          <li><a class="dropdown-item" href="#">Fasilitas</a></li>
+                          <li><a class="dropdown-item" href="#">Ekstrakurikuler</a></li>
+                          
+                          <li><hr class="dropdown-divider"></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <section>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 style="text-align: center;">Pendaftaran Siswa</h2>
+        </div>
+
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputNamaDepan" class="form-label">Nama Depan</label>
+                <input type="text" class="form-control" id="inputNamaDepan" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputNamaBelakang" class="form-label">Nama Belakang</label>
+                <input type="text" class="form-control" id="inputNamaBelakang" required>
+            </div>
+            <div class="col-12">
+                <label for="inputTanggalLahir" class="form-label">Tanggal Lahir</label>
+                <input type="date" class="form-control" id="inputTanggalLahir" required>
+            </div>
+            <div class="col-12">
+                <label for="inputTempatLahir" class="form-label">Tempat Lahir</label>
+                <input type="text" class="form-control" id="inputTempatLahir" required>
+            </div>
+            <div class="col-12">
+                <label for="inputJenisKelamin" class="form-label">Jenis Kelamin</label>
+                <select class="form-select" id="inputJenisKelamin" required>
+                    <option selected disabled>Pilih...</option>
+                    <option value="laki-laki">Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="inputAlamat" class="form-label">Alamat</label>
+                <input type="text" class="form-control" id="inputAlamat" placeholder="Contoh: Jl. Permai No. 10" required>
+            </div>
+            <div class="col-md-5">
+                <label for="inputKota" class="form-label">Kota/Kabupaten</label>
+                <select class="form-select" id="inputKota" required>
+                    <option selected disabled>Pilih...</option>
+                    <option value="sleman">Kab. Sleman</option>
+                    <option value="kulonprogo">Kab. Kulonprogo</option>
+                    <option value="yogyakarta">Kota Yogyakarta</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="inputProvinsi" class="form-label">Provinsi</label>
+                <select class="form-select" id="inputProvinsi" required>
+                    <option selected disabled>Pilih...</option>
+                    <option value="jateng">Jawa Tengah</option>
+                    <option value="diy">Daerah Istimewa Yogyakarta</option>
+                    <option value="jabar">Jawa Barat</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="inputKodePos" class="form-label">Kode Pos</label>
+                <input type="text" class="form-control" id="inputKodePos" required>
+            </div>
+            <div class="col-12">
+                <label for="inputNoTelepon" class="form-label">Nomor Telepon</label>
+                <input type="tel" class="form-control" id="inputNoTelepon" placeholder="Contoh: 081234567890" required>
+            </div>
+            <div class="col-12">
+                <label for="inputAsalSekolah" class="form-label">Asal Sekolah</label>
+                <input type="text" class="form-control" id="inputAsalSekolah" required>
+            </div>
+            <div class="col-12">
+                <label for="inputTahunLulus" class="form-label">Tahun Lulus</label>
+                <input type="number" class="form-control" id="inputTahunLulus" required>
+            </div>
+            <div class="col-12 form-check">
+                <input class="form-check-input" type="checkbox" id="simpanInfo" required>
+                <label class="form-check-label" for="simpanInfo">
+                    Simpan informasi ini untuk selanjutnya
+                </label>
+            </div>
+            <div class="col-12">
+                <h3>Pembayaran</h3>
+            </div>
+            <div class="col-12 form-check">
+                <input class="form-check-input" type="radio" name="metodePembayaran" id="kartuKredit" value="kartuKredit" checked required>
+                <label class="form-check-label" for="kartuKredit">
+                    Kartu Kredit
+                </label>
+            </div>
+            <div class="col-12 form-check">
+                <input class="form-check-input" type="radio" name="metodePembayaran" id="kartuDebit" value="kartuDebit" required>
+                <label class="form-check-label" for="kartuDebit">
+                    Kartu Debit
+                </label>
+            </div>
+            <div class="col-12 form-check">
+                <input class="form-check-input" type="radio" name="metodePembayaran" id="paypal" value="paypal" required>
+                <label class="form-check-label" for="paypal">
+                    PayPal
+                </label>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Proses Pendaftaran</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+<!--Footer Section-->
+<footer class="footer mt-5">
+    <div class="footer-row">
+      <div class="footer-col">
+        <h4>Info</h4>
+        <ul class="links">
+          <li><a href="#">Tentang AMIKOM</a></li>
+          <li><a href="#">Compressions</a></li>
+          <li><a href="#">Customers</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Collection</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul class="links">
+          <li><a href="#">Tentang Sekolah</a></li>
+          <li><a href="#">Lokasi</a></li>
+          <li><a href="#">Artikel</a></li>
+          <li><a href="#">Prestasi</a></li>
+          <li><a href="#">Ekstrakurikuler</a></li>
+          <li><a href="#">Lainnya</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-col">
+        <h4>Persetujuan</h4>
+        <ul class="links">
+          <li><a href="#">Persetujuan Kepala Sekolah</a></li>
+          <li><a href="#">Keputusan Yayasan</a></li>
+          <li><a href="#">Keputusan Siswa</a></li>
+          <li><a href="#">Kepala Pengurus Yayasan</a></li>
+          <li><a href="#">Keputusan Direktorat Akademik</a></li>
+          <li><a href="#">Keputusan Orang tua siswa</a></li>
+        </ul>
+      </div>
+    
+      <div class="footer-col">
+        <h4>Berita Sekolah</h4>
+        <p>
+        Berlangganan untuk menikmati konten dari sekolah
+        </p>
+        <form action="#">
+          <input type="text" placeholder="Your email" required>
+          <button type="submit">kirim</button>
+        </form>
+  
+      </div>
+    </div>
+
+    <div class="text-left p-4" style="background-color: black">
+      © 2024 Copyright  | Dikelola Balai Pendidikan Kabupaten Sleman
+    </div>
+
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
