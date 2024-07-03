@@ -17,37 +17,7 @@
         integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-        <style>
-        
-          
-          .navbar {
-              transition: background-color 0.3s ease, box-shadow 0.3s ease;
-          }
-          
-       
-          
-          .navbar.navbar-dark.bg-dark {
-              background-color: transparent !important;
-          }
-          
-          .navbar.navbar-light.bg-white {
-              background-color: #ffffff !important;
-              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          }
-          
-          .container {
-              max-width: 100%;
-          }
-      
-          .btn-back {
-              margin-bottom: 20px;
-          }
-          .navbar-nav .nav-item .nav-link:hover {
-              color: #d3d33e !important; /* Change text color to yellow on hover */
-          }
-      </style>
-
+    
 
         <!---Custom CSS -->
         <link href="styles.css" rel="stylesheet">
@@ -57,7 +27,7 @@
           <header>
             <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
               <div class="container-fluid">
-                          <a class="navbar-brand " href="#">
+                          <a class="navbar-logo" href="#">
                               <img src="assets/logo.png"
                               width="200"
                               height="auto">
@@ -66,7 +36,7 @@
                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 30px;">
                             <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="#home">Home</a>
                             </li>
@@ -161,18 +131,19 @@
           </button>
       </div>
         </section>
+        <br><br><br>
 
 
 <!--Deskripsi Section-->
-        <section class="tentangsekolah" id="tentangsekolah" >
-          <div style="margin-top: 80px;">
-          <div class="sekolah-container py-5">
-            <h2 class="heading">Tentang <span>Sekolah</span></h2>
+
+
+        <section class="tentangsekolah" id="tentangsekolah"> 
+            <h1 class="heading" style="margin-top: 50px;">Tentang <span>Sekolah</span></h2>
             <br>
               <div class="row py-3 ">
-                  <div class="col-lg-7 mb-4 " style="padding-left: 80px;">
-                      <h1>SMK AMIKOM 1 KAB. SLEMAN
-                      </h1> <br>
+                  <div class="col-lg-7 mb-4 " style="padding-left: 80px;" >
+                      <h2>SMK AMIKOM 1 KAB. SLEMAN
+                      </h2> <br>
                       <h4>Menjadi Sekolah yang menyenangkan bagi siswa</h4><br>
                       <p>SMK Amikom 1 Sleman didirikan pada tahun 2001 oleh Yayasan Amikom Yogyakarta. Sekolah ini merupakan bagian dari Amikom Group, yang juga menaungi Universitas Amikom Yogyakarta, sebuah perguruan tinggi ternama di bidang informatika dan komputer.
       
@@ -181,21 +152,20 @@
                         <button type="button"
                               class="btn">Profil Sekolah</button></p>
                   </div>
-                  <div class="col-lg-5 mb-4" style="padding-right: 80px;">
+                  <div class="col-lg-5 mb-4" style="padding-right: 80px;"  >
                       <img src="assets/2.jpg"
                           class="d-block w-100 rounded" alt="...">
                   </div>
               </div>
           </div>
-        </div>
         </section>
-
+<br>
+<br>
 <!--Bagian Tabel menu-->
         <section class="menu" id="menu">
-          <div class="container pb-5" style="margin-top: 80px;">
               <div class="row">
-                <h2 class="heading" ><span> Prestasi</span> & <span>Artikel</span></h2>
-                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4">
+                <h1 class="heading" ><span> Prestasi</span> & <span>Artikel</span></h2>
+                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex; padding-left: 50px;">
                       <div class="bg-light text-dark border text-center p-3 p-xl-4 rounded">
                           <div class="pb-3"><i class="fas fa-trophy fa-3x"></i></div>
                           <div class="h5 text-uppercase pb-2">Berprestasi</div>
@@ -203,21 +173,21 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4">
+                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex;">
                       <div class="bg-light text-dark border text-center p-3 p-xl-4 rounded">
                           <div class="pb-3"><i class="fas fa-award fa-3x"></i></div>
                           <div class="h5 text-uppercase pb-2">Terakreditasi A</div>
                           <div> Akreditasi Jurusan terjamin. Perancangan Sistem informasi, teknik komputer jaringan, Rekayasa perangkat lunak </div>
                       </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4">
+                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex;">
                       <div class="bg-light text-dark border text-center p-3 p-xl-4 rounded">
                           <div class="pb-3"><i class="fas fa-microscope fa-3x"></i></div>
                           <div class="h5 text-uppercase pb-2">Modern</div>
                           <div>menyediakan fasilitas sekolah yang modern seperti kelas, lab dan ruang praktik untuk menunjang para siswa  </div>
                       </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4">
+                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex; padding-right: 50px;">
                       <div class="bg-light text-dark border text-center p-3 p-xl-4 rounded">
                           <div class="pb-3"><i class="fas fa-shapes fa-3x"></i></div>
                           <div class="h5 text-uppercase pb-2">Ekstrakurikuler</div>
@@ -225,16 +195,14 @@
                       </div>
                   </div>
               </div>
-          </div>
         </section>
 
         <!--Bagian Section Artikel-->
         <section class="artikel" id="artikel">
-          <div class="container pb-5" style="margin-top: 80px;">
               <div class="row pb-3 align-items-top">
-                <h2 class="heading" ><span> Galeri</span> & <span>Artikel</span></h2>
+                <h1 class="heading" style="margin-top: 100px;"><span> Galeri</span> & <span>Artikel</span></h2>
                   <div class="col-xxl-5 col-lg-6 mb-3 mb-lg-4">
-                      <div class="bg-light text-black p-3 rounded">
+                      <div class="bg-light text-black p-3 rounded" style="margin-left: 35px;">
                           <div class="h5 text-uppercase pb-2" style="color: black; text-align: center;">Gallery Sekolah</div>
                           <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
                               <div class="carousel-inner">
@@ -327,12 +295,12 @@
                     </div>
                 </div>
             </div>
-        </div>
         </section>
+        <br><br><br>
 
         <!--Section Pendaftaran-->
 <section class="pendaftaran" id="pendaftaran">
-        <div class="py-2" style="margin-top: 80px;">
+        <div class="py-2">
           <div class="container text-center bg-success text-white py-5">
               <div class="fs-2 mb-3">Segera Daftar!</div>
               <p>Penerimaan Peserta Didik Baru (PPDB) SMK AMIKOM 1 SLEMAN Tahun Pelajaran 2024-2025</p>
@@ -346,22 +314,23 @@
       <div class="mt-5 mx-5">
       </div>
 </section>
+<br>
 
 <!--Section Maps-->
   <section class="maps" id="maps">
       <div class="py-5">
-          <div class="container">
               <div class="row">
-                <h2 class="heading" >Lokasi <span>Sekolah</span></h2>
+                <h1 class="heading" >Lokasi <span>Sekolah</span></h2>
                   <div style="width: 800px; height: 450px; margin: auto;">
                       <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(UNIVERSITAS%20AMIKOM%20YOGYAKARTA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
                           <a href="https://www.gps.ie/">gps vehicle tracker</a>
                       </iframe>
                   </div>
+                  </div>
                   </section>
 <!--Footer Section-->
               <footer class="footer">
-                  <div class="footer-row">
+                  <div class="footer-row" style="background-color: black;">
                     <div class="footer-col">
                       <h4>Info</h4>
                       <ul class="links">
@@ -418,7 +387,10 @@
           integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
           crossorigin="anonymous"></script>
 
+       
+
           <script>
+
             window.onscroll = function() {scrollFunction()};
             
             function scrollFunction() {
@@ -431,6 +403,7 @@
                 }
             }
         </script>
-  
+
+      
   </body>
   </html>
