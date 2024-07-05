@@ -17,7 +17,8 @@
         integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+        <!--Fade Animations-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!---Custom CSS -->
         <link href="styles.css" rel="stylesheet">
@@ -41,18 +42,18 @@
                               <a class="nav-link active" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#artikel">Artikel</a>
+                            <li class="nav-item">
                               <a class="nav-link active" aria-current="page" href="#pendaftaran">Pendaftaran</a>
-                              <li class="nav-item">
-                                  <a class="nav-link active" aria-current="page" href="#artikel">Artikel</a>
                             <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Menu
                               </a>
                               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Berprestasi</a></li>
-                                <li><a class="dropdown-item" href="#">Akreditasi</a></li>
-                                <li><a class="dropdown-item" href="#">Fasilitas</a></li>
-                                <li><a class="dropdown-item" href="#">Ekstrakurikuler</a></li>
+                                <li><a class="dropdown-item" aria-current="page" href="#menu">Berprestasi</a></li>
+                                <li><a class="dropdown-item" aria-current="page" href="#menu">Akreditasi</a></li>
+                                <li><a class="dropdown-item" aria-current="page" href="#menu">Fasilitas</a></li>
+                                <li><a class="dropdown-item" aria-current="page" href="#menu">Ekstrakurikuler</a></li>
                                 
                                 <li><hr class="dropdown-divider"></li>
                               </ul>
@@ -138,21 +139,25 @@
 
 
         <section class="tentangsekolah" id="tentangsekolah"> 
-            <h1 class="heading" style="margin-top: 50px;">Tentang <span>Sekolah</span></h2>
+            <h1 class="heading" style="margin-top: 50px;" data-aos="fade-up" data-aos-duration="2000">Tentang <span>Sekolah</span></h2>
+        <div class="line-container" data-aos="fade-up" data-aos-duration="2000">
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
             <br>
               <div class="row py-3 ">
-                  <div class="col-lg-7 mb-4 " style="padding-left: 80px;" >
+                  <div class="col-lg-7 mb-4 " style="padding-left: 80px;" data-aos="fade-right">
                       <h2>SMK AMIKOM 1 KAB. SLEMAN
                       </h2> <br>
-                      <h4>Menjadi Sekolah yang menyenangkan bagi siswa</h4><br>
+                      <h4><span>Menjadi Sekolah yang menyenangkan bagi siswa</span></h4><br>
                       <p>SMK Amikom 1 Sleman didirikan pada tahun 2001 oleh Yayasan Amikom Yogyakarta. Sekolah ini merupakan bagian dari Amikom Group, yang juga menaungi Universitas Amikom Yogyakarta, sebuah perguruan tinggi ternama di bidang informatika dan komputer.
       
                           SMK Amikom 1 Sleman memiliki fokus pada pendidikan vokasi di bidang informatika dan komputer. Sekolah ini bertujuan untuk menghasilkan lulusan yang kompeten dan siap kerja di industri teknologi informasi dan komunikasi.</p>
-                      <p><button type="button" class="btn">Info PPDB</button> 
-                        <button type="button"
-                              class="btn">Profil Sekolah</button></p>
+                      <p>
+                        <a href="#pendaftaran"><button type="button" class="btn">Info PPDB</button></a> 
+                        <a href="#home"><button type="button" class="btn">Profil Sekolah</button></p></a>
                   </div>
-                  <div class="col-lg-5 mb-4" style="padding-right: 80px;"  >
+                  <div class="col-lg-5 mb-4" style="padding-right: 80px;" data-aos="fade-left">
                       <img src="assets/2.jpg"
                           class="d-block w-100 rounded" alt="...">
                   </div>
@@ -163,9 +168,15 @@
 <br>
 <!--Bagian Tabel menu-->
         <section class="menu" id="menu">
-              <div class="row">
+              <div class="row" data-aos="fade-up" data-aos-duration="2000">
                 <h1 class="heading" ><span> Prestasi</span> & <span>Artikel</span></h2>
-                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex; padding-left: 50px;">
+                    <div class="line-container" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <br>
+                    <br>
+                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex;" data-aos="fade-up">
                       <div class="bg-light text-dark border text-center p-3 p-xl-4 rounded">
                           <div class="pb-3"><i class="fas fa-trophy fa-3x"></i></div>
                           <div class="h5 text-uppercase pb-2">Berprestasi</div>
@@ -173,21 +184,21 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex;">
+                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex;" data-aos="fade-up">
                       <div class="bg-light text-dark border text-center p-3 p-xl-4 rounded">
                           <div class="pb-3"><i class="fas fa-award fa-3x"></i></div>
                           <div class="h5 text-uppercase pb-2">Terakreditasi A</div>
                           <div> Akreditasi Jurusan terjamin. Perancangan Sistem informasi, teknik komputer jaringan, Rekayasa perangkat lunak </div>
                       </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex;">
+                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex;" data-aos="fade-up">
                       <div class="bg-light text-dark border text-center p-3 p-xl-4 rounded">
                           <div class="pb-3"><i class="fas fa-microscope fa-3x"></i></div>
                           <div class="h5 text-uppercase pb-2">Modern</div>
                           <div>menyediakan fasilitas sekolah yang modern seperti kelas, lab dan ruang praktik untuk menunjang para siswa  </div>
                       </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex; padding-right: 50px;">
+                  <div class="col-lg-3 col-md-6 mb-3 mb-lg-4" style="display: flex;" data-aos="fade-up">
                       <div class="bg-light text-dark border text-center p-3 p-xl-4 rounded">
                           <div class="pb-3"><i class="fas fa-shapes fa-3x"></i></div>
                           <div class="h5 text-uppercase pb-2">Ekstrakurikuler</div>
@@ -200,9 +211,18 @@
         <!--Bagian Section Artikel-->
         <section class="artikel" id="artikel">
               <div class="row pb-3 align-items-top">
-                <h1 class="heading" style="margin-top: 100px;"><span> Galeri</span> & <span>Artikel</span></h2>
+                <h1 class="heading" style="margin-top: 100px;" data-aos="fade-up"
+                data-aos-duration="2000"><span> Galeri</span> & <span>Artikel</span></h2>
+                    <div class="line-container" data-aos="fade-up"
+                    data-aos-duration="2000">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <br>
+                    <br>
                   <div class="col-xxl-5 col-lg-6 mb-3 mb-lg-4">
-                      <div class="bg-light text-black p-3 rounded" style="margin-left: 35px;">
+                      <div class="bg-light text-black p-3 rounded" style="margin-left: 35px;" data-aos="fade-right" data-aos-offset="300"
+                      data-aos-easing="ease-in-sine">
                           <div class="h5 text-uppercase pb-2" style="color: black; text-align: center;">Gallery Sekolah</div>
                           <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel">
                               <div class="carousel-inner">
@@ -232,7 +252,7 @@
                           </div>
                       </div>
                     </div>
-                  <div class="col-xxl-7 col-lg-6 mb-3 mb-lg-4">
+                  <div class="col-xxl-7 col-lg-6 mb-3 mb-lg-4" data-aos="fade-left">
                     <div class="h5 text-uppercase">Artikel &amp; Kegiatan Sekolah</div>
                     <div class="d-flex py-3 border-bottom">
                         <div class="me-3 me-lg-4"><img
@@ -242,8 +262,9 @@
                         <div>
                             <div><a href="#" class="text-decoration-none text-white">Jadwal Pendaftaran Seleksi Ujian
                                     PPDB</a></div>
-                            <div class="small text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="small text-secondary">Jadwal pendaftaran seleksi ujian PPDB akan dibuka mulai tanggal 8 Juli 2024
+                                sampai pada tanggal 20 Juli 2024 dengan syarat & ketentuan berlaku.
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex py-3 border-bottom">
@@ -253,8 +274,9 @@
                         <div>
                             <div><a href="#" class="text-decoration-none text-white">Partisipasi dan Keterlibatan Orang Tua
                                     dalam kegiatan sekolah</a></div>
-                            <div class="small text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="small text-secondary">Dalam partisipasi dan keterlibatan orang tua dalam rangka berkumpul
+                                bersama dengan tujuan untuk meningkatkan persaudaraan antar wali orang tua dan guru.
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex py-3 border-bottom">
@@ -264,8 +286,9 @@
                         <div>
                             <div><a href="#" class="text-decoration-none text-white">Penerapan Kurikulum yang Inklusif</a>
                             </div>
-                            <div class="small text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="small text-secondary">Pada tahun ini, Kemendikbud mengeluarkan kurikulum merdeka dengan aturan
+                                baru, yaitu salah satunya penerapan Pendidikan Karakter Baru.
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex py-3 border-bottom">
@@ -275,8 +298,9 @@
                         <div>
                             <div><a href="#" class="text-decoration-none text-white">Jadwal Pendaftaran Seleksi Ujian
                                     PPDB</a></div>
-                            <div class="small text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="small text-secondary">Jadwal Seleksi akan dimulai 5 hari setelah pendaftaran selesai, yaitupada tanggal
+                                25 sampai 29 Juli 2024.
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex py-3 border-bottom">
@@ -284,14 +308,14 @@
                                 src="https://naevaschool.naevaweb.my.id/userfiles/uploads/img-edukasi-64.jpg"
                                 class="rounded" alt="..." width="64"></div>
                         <div>
-                            <div><a href="#" class="text-decoration-none text-white">Partisipasi dan Keterlibatan Orang Tua
-                                    dalam kegiatan sekolah</a></div>
-                            <div class="small text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div><a href="#" class="text-decoration-none text-white">Study Tour</a></div>
+                            <div class="small text-secondary">Pada tahun ini, sekolah SMK AMIKOM 1 KAB. SLEMAN akan diadakan namanya
+                                Study tour yang diadakan pada bulan Desember 2024.
+                            </div>
                         </div>
                     </div>
                     <div class="pt-3">
-                        <button type="btn" class="btn">Selengkapnya</button>
+                        <a href="#"><button type="btn" class="btn">Selengkapnya</button></a>
                     </div>
                 </div>
             </div>
@@ -299,7 +323,7 @@
         <br><br><br>
 
         <!--Section Pendaftaran-->
-<section class="pendaftaran" id="pendaftaran">
+<section class="pendaftaran" id="pendaftaran" data-aos="fade-up">
         <div class="py-2">
           <div class="container text-center bg-success text-white py-5">
               <div class="fs-2 mb-3">Segera Daftar!</div>
@@ -318,14 +342,35 @@
 
 <!--Section Maps-->
   <section class="maps" id="maps">
-      <div class="py-5">
-              <div class="row">
+      <div class="py-5" data-aos="fade-up" data-aos-duration="2000">
+              <div class="row" data-aos="fade-up" data-aos-duration="2000">
                 <h1 class="heading" >Lokasi <span>Sekolah</span></h2>
-                  <div style="width: 800px; height: 450px; margin: auto;">
-                      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(UNIVERSITAS%20AMIKOM%20YOGYAKARTA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-                          <a href="https://www.gps.ie/">gps vehicle tracker</a>
-                      </iframe>
-                  </div>
+                    <div class="line-container">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="m-container">
+                        <div class="map-container">
+                            <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=+(UNIVERSITAS%20AMIKOM%20YOGYAKARTA)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                                <a href="https://www.gps.ie/">gps vehicle tracker</a>
+                            </iframe>
+                        </div>
+                        <div class="contact-container">
+                            <h2>Kontak</h2>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" style="margin-right: 20px;"></i><span>Email : </span> smkamikom1sleman@gmail.com
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" style="margin-right: 20px;"></i><span>Address : </span> Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone" style="margin-right: 20px;"></i><span>Phone : </span> 0123 - 7382937
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-fax" style="margin-right: 20px;"></i><span>Fax : </span> 0354 - 917819
+                            </div>
+                        </div>
+                    </div>
                   </div>
                   </section>
 <!--Footer Section-->
@@ -404,6 +449,10 @@
             }
         </script>
 
-      
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
   </body>
   </html>
