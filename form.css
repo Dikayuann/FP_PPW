@@ -1,0 +1,41 @@
+:root {
+    --bg-color: #495057;
+    --second-bg-color: #560bad;
+    --third-bg-color: #212529;
+    --text-color: #fff;
+    --main-color: #4361ee;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: var(--main-color);
+}
+
+.container {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-back {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: var(--bg-color);
+}
+
+.navbar.navbar-light.bg-white {
+    background-color: #ffffff !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--main-color) !important;
+}
+
+.footer {
+    background-color: var(--third-bg-color);
+    color: #fff;
+}
