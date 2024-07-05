@@ -22,7 +22,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: white;
-
+    background-color: var(--third-bg-color);
 }
 
 .container {
@@ -50,31 +50,58 @@ body {
 }
 
 span {
-    color: var(--second-bg-color);
+    color: var(--main-color);
 }
 
-.menu h2 {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 60px;
+.navbar {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tentangsekolah h2 {
+.navbar.navbar-dark.bg-dark {
+  background-color: transparent !important;
+}
+
+.navbar.navbar-light.bg-white {
+  background-color: #ffffff !important;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 100%;
+}
+
+.btn-back {
+  margin-bottom: 20px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+.menu {
+  text-decoration: var(--third-bg-color);
+}
+.menu h1 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
-.artikel h2 {
+.tentangsekolah h1 {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-.maps h2 {
+.artikel h1 {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.maps h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .menu-container {
@@ -209,3 +236,63 @@ text-decoration: none;
   .footer {
     background-color: var(--third-bg-color);
   }
+
+
+  
+@media (max-width: 991px) {
+  .navbar-nav .nav-item {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+
+.menu .col-lg-3,
+.menu .col-md-6 {
+    transition: transform 0.3s ease;
+}
+
+.menu .col-lg-3:hover,
+.menu .col-md-6:hover {
+    transform: scale(1.05);
+}
+
+
+.line-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 70px;
+}
+
+.line {
+  width: 50px;
+  height: 4px;
+  background-color: whitesmoke;
+}
+
+.m-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 20px;
+}
+.map-container {
+  width: 50%;
+  height: 450px;
+}
+.contact-container {
+  width: 40%;
+}
+.contact-container h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+.contact-container .contact-item {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.contact-container .contact-item span {
+  font-weight: bold;
+  font-size: 20px;
+}
